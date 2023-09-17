@@ -1,0 +1,27 @@
+[package]
+name = "gdai"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
+burn = { git = "https://github.com/burn-rs/burn.git" }
+serde = {version = "1.0.171", features = ["std", "derive"]}
+num-traits = "0.2.15"
+hound = "3.5.0"
+tokenizers = {version = "0.13.3", default-features = false, features = [
+  "onig",
+  "http",
+]}
+npy = "0.4.0"
+cfg-if = "0.1"
+rubato = "0.14.1"
+env_logger = "0.10.0"
+log = "0.4.20"
+
+[dependencies.burn-wgpu]
+package = "burn-wgpu"
+git = "https://github.com/burn-rs/burn.git"
