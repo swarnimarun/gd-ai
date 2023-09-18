@@ -16,9 +16,12 @@ I wrote these things a while ago for Godot in GDNative porting it to gdext and m
 
 ## Credits
 
-burn and @Gadersd, I borrowed some of the code from their examples for building model in burn, and gdext cause writing the loader from scratch would be too much work. And thanks to any open-source projects I use in the list above. Please check the cargo.toml for the lists.
+burn and @Gadersd, I used some of the code from their examples as base for building model and other parts of the code structure for the burn interface layer,
+and gdext cause writing the loader from scratch would be too much work.
+And thanks to any open-source projects I use in the list above. Please check the cargo.toml for the lists.
 
-rubato also was very useful otherwise it would be a pita to get it working on windows.
+Aside:
+rubato also was very useful otherwise it would be a pita to get "resampling" working on windows. CoreAudio(mac) and Linux(some of the audio stacks) already support in built resampling. Sadly Godot doesn't provide external access to resampling code it has built-in, that would be quite good to have.
 
 ## Author: Me (Swarnim)
 
